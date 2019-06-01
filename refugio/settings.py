@@ -134,10 +134,3 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 LOGIN_REDIRECT_URL = reverse_lazy('adopcion:solicitud_listar')
 #esto es para que nos lleve a otro lado despues de deslogearnos
 LOGOUT_REDIRECT_URL = reverse_lazy('login')
-#para recuperar la cuenta por correo
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 25
-EMAIL_HOST_USER = 'ddjochoa.20@gmail.com'
-EMAIL_HOST_PASSWORD = 'Teamomamaok'
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
